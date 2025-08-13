@@ -47,5 +47,5 @@ jobs:
           uv run ruff format --diff --check --target-version=py313 src tests
 
       - name: Run tests with coverage
-              run: |
-                uv run pytest
+        run: |
+          uv run pytest
