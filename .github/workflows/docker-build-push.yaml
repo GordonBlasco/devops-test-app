@@ -39,8 +39,8 @@ jobs:
           labels: |
             org.opencontainers.image.source=https://github.com/${{ github.repository }}
           tags: |
-            ${{ env.REGISTRY }}/${{ github.repository.toLowerCase() }}/study-app-api:${{ steps.tag.outputs.TAG }}
-            ${{ env.REGISTRY }}/${{ github.repository.toLowerCase() }}/study-app-api:latest
+            ${{ env.REGISTRY }}/gordonblasco/study-app-api:${{ steps.tag.outputs.TAG }}
+            ${{ env.REGISTRY }}/gordonblasco/study-app-api:latest
             ${{ env.REGISTRY }}/${{ env.USER_SCOPED_IMAGE }}:${{ steps.tag.outputs.TAG }}
             ${{ env.REGISTRY }}/${{ env.USER_SCOPED_IMAGE }}:latest
 
