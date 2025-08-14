@@ -35,9 +35,17 @@ jobs:
         with:
           context: ./src/backend
           push: true
+          # Add an OCI label so GitHub links the package to this repo either way
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
           tags: |
-            ${{ env.REGISTRY }}/${{ env.BACKEND_IMAGE_NAME }}:${{ steps.tag.outputs.TAG }}
-            ${{ env.REGISTRY }}/${{ env.BACKEND_IMAGE_NAME }}:latest
+            # REPO-SCOPED tags -> will appear on the repo's Packages tab
+            ${{ env.REGISTRY }}/${{ github.repository }}/study-app-api:${{ steps.tag.outputs.TAG }}
+            ${{ env.REGISTRY }}/${{ github.repository }}/study-app-api:latest
+            # USER-SCOPED tags (compat with what you were using)
+            ${{ env.REGISTRY }}/${{ env.USER_SCOPED_IMAGE }}:${{ steps.tag.outputs.TAG }}
+            ${{ env.REGISTRY }}/${{ env.USER_SCOPED_IMAGE }}:latest
+
     outputs:
       tag: ${{ steps.tag.outputs.TAG }}
       app: backend
