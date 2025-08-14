@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/GordonBlasco/devops-test-app/compare/backend-v0.2.1...backend-v0.2.2) (2025-08-14)
+
+
+### Bug Fixes
+
+* **backend:** docker fix package ([#14](https://github.com/GordonBlasco/devops-test-app/issues/14)) ([0e85b0a](https://github.com/GordonBlasco/devops-test-app/commit/0e85b0a0a1c305ecf860b050cbfb74098d6445db))
+
 ## [0.2.1](https://github.com/GordonBlasco/devops-test-app/compare/backend-v0.2.0...backend-v0.2.1) (2025-08-14)
 
 
