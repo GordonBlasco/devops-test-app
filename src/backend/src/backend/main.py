@@ -3,9 +3,6 @@ from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import logging
 from typing import List, Optional
-
-# trigger a package build
-# fix lower
 from .models import StudySession, StudySessionCreate, Stats
 from .storage import save_session, get_all_sessions, get_sessions_by_tag, get_statistics
 from .config import (
@@ -17,7 +14,8 @@ from .config import (
     CORS_ALLOW_METHODS,
     CORS_ALLOW_HEADERS,
 )
-
+# trigger a package build
+# fix lower
 # Configure logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
