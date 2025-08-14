@@ -15,8 +15,9 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 COPY . /app
 
 # Sync the project and install it, now that we have access to the source code
+# --no-dev flag avoids using the dev packages in the pyproject.toml
 RUN --mount=type=cache,target=/root/.cache/uv \
-  uv sync --locked --no-editable
+  uv sync --locked --no-editable --no-dev
 
 FROM python:3.13-alpine
 
