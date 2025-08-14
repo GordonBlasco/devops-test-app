@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.5](https://github.com/GordonBlasco/devops-test-app/compare/backend-v0.2.4...backend-v0.2.5) (2025-08-14)
+
+
+### Bug Fixes
+
+* **backend:** typo ([#20](https://github.com/GordonBlasco/devops-test-app/issues/20)) ([50ecea1](https://github.com/GordonBlasco/devops-test-app/commit/50ecea1fcf272a289e5068f49245cf5aebb7b9fc))
+
 ## [0.2.4](https://github.com/GordonBlasco/devops-test-app/compare/backend-v0.2.3...backend-v0.2.4) (2025-08-14)
 
 
