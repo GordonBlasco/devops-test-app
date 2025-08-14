@@ -1,6 +1,6 @@
 [project]
 name = "test-app-backend"
-version = "0.1.0"
+version = "0.2.0"
 description = "back end api for tracking app"
 readme = "README.md"
 authors = [{ name = "Gordon Blasco", email = "myname@gmail.com" }]
