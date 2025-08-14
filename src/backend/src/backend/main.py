@@ -16,7 +16,7 @@ from .config import (
 )
 
 # trigger a package build
-# fix lower another oh another and again
+# fix lower another
 # Configure logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
