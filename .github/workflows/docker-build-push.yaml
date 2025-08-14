@@ -41,8 +41,6 @@ jobs:
           tags: |
             ${{ env.REGISTRY }}/gordonblasco/study-app-api:${{ steps.tag.outputs.TAG }}
             ${{ env.REGISTRY }}/gordonblasco/study-app-api:latest
-            ${{ env.REGISTRY }}/${{ env.USER_SCOPED_IMAGE }}:${{ steps.tag.outputs.TAG }}
-            ${{ env.REGISTRY }}/${{ env.USER_SCOPED_IMAGE }}:latest
 
     outputs:
       tag: ${{ steps.tag.outputs.TAG }}
