@@ -3,7 +3,7 @@ on:
   push:
     tags:
       - "backend*"
-      - "fontend*"
+      - "frontend*"
 env:
   REGISTRY: ghcr.io
   BACKEND_IMAGE_NAME: gordonblasco/study-app-api
