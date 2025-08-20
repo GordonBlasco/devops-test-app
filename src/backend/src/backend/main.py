@@ -15,7 +15,7 @@ from .config import (
     CORS_ALLOW_HEADERS,
 )
 
-# trigger a package build
+# trigger a build
 # Configure logging
 logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
